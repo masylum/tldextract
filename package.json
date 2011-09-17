@@ -1,0 +1,14 @@
+{
+  "name": "tldextract",
+  "description": "Extract domain, subdomain and tld from a url",
+  "version": "0.0.1",
+  "author": "Pau Ramon <masylum@gmail.com>",
+  "keywords": ["url", "domain", "subdomaon", "tld", "parse"],
+  "main": "./index",
+  "dependencies": {
+    "request": "2.1.1"
+  },
+  "repository" : {"type": "git" , "url": "http://github.com/masylum/tldextract.git" },
+  "engines": { "node": ">= 0.4.0" }
+}
+
