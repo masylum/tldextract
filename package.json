@@ -1,7 +1,7 @@
 {
   "name": "tldextract",
   "description": "Extract domain, subdomain and tld from a url",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Pau Ramon <masylum@gmail.com>",
   "keywords": ["url", "domain", "subdomaon", "tld", "parse"],
   "main": "./index",
