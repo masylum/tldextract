@@ -15,3 +15,8 @@ tldextract('a.b.c.d.foo.ye.ye', function (error, obj) {
   assert.ifError(error);
   assert.deepEqual(obj, {subdomain: 'a.b.c.d', domain: 'foo', tld: 'ye.ye'});
 });
+
+tldextract('dali.portlligat.museum', function (error, obj) {
+  assert.ifError(error);
+  assert.deepEqual(obj, {subdomain: '', domain: 'dali', tld: 'portlligat.museum'});
+});
