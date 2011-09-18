@@ -7,12 +7,14 @@ top-level domain) from the registered domain and subdomains of a URL.
 
 ``` javascript
 var tldextract = require('tldextract');
-tldextract('http://forums.news.cnn.com/', function (err, obj) {
-  // {subdomain: 'forums.news', domain: 'cnn', tld: 'com'}
-})
+tldextract('http://forums.news.cnn.com/', console.log);
+//=> null {subdomain: 'forums.news', domain: 'cnn', tld: 'com'}
+
+tldextract('http://ye.ye.ye.ye/', console.log);
+//=> null {subdomain: 'ye', domain: 'ye', tld: 'ye.ye'}
 ```
 
-## tests
+## Tests
 
 ``` bash
 make
