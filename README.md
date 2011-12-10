@@ -25,4 +25,4 @@ make
 
 ## Disclaimer
 
-This is module is a port of the python module [tldextract](https://github.com/john-kurkowski/tldextract).
+This module is a port of the python module [tldextract](https://github.com/john-kurkowski/tldextract).
