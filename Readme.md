@@ -6,7 +6,7 @@ top-level domain) from the registered domain and subdomains of a URL.
 ## How does it work?
 
 ``` javascript
-const tldExtract = require('@jtwebb/tldextract');
+const tldExtract = require('@thoughtindustries/tldextract');
 
 try {
   const data1 = tldExtract('https://forums.news.cnn.com/');

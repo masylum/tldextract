@@ -1,8 +1,9 @@
 const fs = require('fs');
 const path = require('path');
+const https = require('https');
 
 (async () => {
-  const data = fs.readFileSync(path.resolve(__dirname, './tlds'), 'utf8')
+  const data = (await request('https://publicsuffix.org/list/public_suffix_list.dat'))
     .split('\n')
     .filter(d => !d.startsWith('//') && d !== '');
 
@@ -10,3 +11,15 @@ const path = require('path');
 
   console.log('Finished!');
 })();
+
+function request(url) {
+  return new Promise((resolve, reject) => {
+    https.get(url, resp => {
+      let data = '';
+
+      resp.on('data', chunk => data += chunk);
+      resp.on('end', () => resolve(data));
+    })
+      .on('error', reject);
+  });
+}
