@@ -1,14 +1,25 @@
 {
-  "name": "tldextract-ti",
+  "name": "@thoughtindustries/tldextract",
   "description": "Extract domain, subdomain and tld from a url",
-  "version": "1.0.0",
-  "author": "Pau Ramon <masylum@gmail.com>",
+  "version": "2.0.0",
+  "author": "Thought Industries",
   "keywords": ["url", "domain", "subdomaon", "tld", "parse"],
   "main": "./index",
-  "dependencies": {
-    "request": "2.2.9"
+  "scripts": {
+    "test": "node ./test/index.js",
+    "convert": "node scripts/convert-to-json.js"
   },
-  "repository" : {"type": "git" , "url": "http://github.com/masylum/tldextract.git" },
-  "engines": { "node": ">= 0.4.0" }
+  "files": [
+    "index.js",
+    "lib"
+  ],
+  "repository" : {
+    "type": "git",
+    "url": "https://github.com/thoughtindustries/tldextract.git"
+  },
+  "homepage": "https://github.com/thoughtindustries/tldextract",
+  "engines": {
+    "node": ">= 0.4.0"
+  }
 }
 
